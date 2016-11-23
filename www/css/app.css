@@ -1,0 +1,22 @@
+body {
+  background-color: #E9E8E0;
+}
+
+.container {
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #F14E32;
+}
+
+h3 {
+  color: #0388A6;
+}
+
+input {
+  width: 100%;
+}

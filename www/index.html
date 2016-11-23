@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen">
+        <link rel="stylesheet" href="css/app.css" media="screen">
+        <title>Case Study</title>
+    </head>
+    <body ng-app='caseStudy'> <!-- Starts body -->
+      <!-- Navigation bar -->
+      <navigation-bar-section></navigation-bar-section>
+      <!-- Main container -->
+      <div class="container" ng-controller='MainController' style="margin-top: 100px;">
+        <!-- Title -->
+        <div class="col-md-8">
+          <h1>List of movies</h1>
+        </div>
+        <!-- Input to search movies -->
+        <input-search-movie></input-search-movie>
+        <!-- List of the movies -->
+        <div class="row" infinite-scroll='requestsTraktTV.nextPage()' infinite-scroll-disabled='requestsTraktTV.busy' infinite-scroll-distance='0'>
+          <div class="col-md-12" ng-repeat='movie in requestsTraktTV.movies | orderBy:"num"' style="margin-bottom: 10px;">
+            <!-- Movie section -->
+            <movie-section></movie-section>
+          </div>
+          <!-- Loading message -->
+          <loading-section></loading-section>
+          <!-- No results message -->
+          <no-results-section></no-results-section>
+        </div>
+      </div>
+      <!----------------- Scripts ----------------------->
+      <script type="text/javascript" src="cordova.js"></script>
+      <script src="js/jquery.js" charset="utf-8"></script>
+      <script src="js/bootstrap.min.js" charset="utf-8"></script>
+      <script src="js/angular.js" charset="utf-8"></script>
+      <script src="js/ng-infinite-scroll.min.js" charset="utf-8"></script>
+      <script src="js/app.js" charset="utf-8"></script>
+    </body>
+</html>

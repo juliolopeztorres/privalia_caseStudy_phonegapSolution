@@ -1,0 +1,5 @@
+!.gitignore
+!.platforms.json
+browser
+ios
+android

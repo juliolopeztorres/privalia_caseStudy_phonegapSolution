@@ -1,0 +1,26 @@
+{
+  "name": "Case Study",
+  "version": "1.0.0",
+  "description": "An example app for Privalia selection process",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliolopeztorres/privalia_caseStudy_phonegapSolution.git"
+  },
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "author": "Julio López Torres",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juliolopeztorres/privalia_caseStudy_phonegapSolution/issues"
+  },
+  "homepage": "https://github.com/juliolopeztorres/privalia_caseStudy_phonegapSolution#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
