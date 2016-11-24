@@ -5,6 +5,8 @@
 Scroll down in order to list more movies. You can enter queries in the text field
 in order to search movies.
 
+Download the stable version v.1.0.1 and use "npm install" to update dependencies.
+
 ### Desktop
 
 In your browser, open the file:
